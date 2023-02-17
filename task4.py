@@ -12,7 +12,9 @@ def custom_exponentiate(x, y):
     return result
 
 
-X = [2, 3, 4]
-Y = [10, 11, 12]
+x = [2, 3, 4]
+y = [10, 11, 12]
 
-print(custom_exponentiate(X, Y))
+print(custom_exponentiate(x, y))
+
+
