@@ -9,22 +9,22 @@
 #  [102.56, 97.700000000000003, 99.140000000000001, 100.03999999999999]
 
 
-def celsius_to_fahrenheit(degrees_celsius):
+def celsius_to_fahrenheit(celsius_temperatures):
     """
-    Function to convert degrees Celsius to degrees Fahrenheit.
+    Convert a list of Celsius temperatures to Fahrenheit.
     Tf = 1.8 * Tc + 32
 
     :param
-        degrees_celsius (list): the list of degrees Celsius
+        celsius_temperatures (list): the list of Celsius temperatures
 
     :return:
-        list: the list of degrees Fahrenheit
+        list: the list of Fahrenheit temperatures
     """
-    COEFF = 1.8
-    COEFF2= 32
-    degrees_fahrenheit = [COEFF * _ + COEFF2 for _ in degrees_celsius]
-    return degrees_fahrenheit
+    SCALE = 1.8
+    FAHRENHEIT_FREEZING_POINT = 32
+    fahrenheit_temperatures = [(SCALE * _) + FAHRENHEIT_FREEZING_POINT for _ in celsius_temperatures]
+    return fahrenheit_temperatures
 
 
-degrees = [39.2, 36.5, 37.3, 37.8]
-print(celsius_to_fahrenheit(degrees))
+temperatures = [39.2, 36.5, 37.3, 37.8]
+print(celsius_to_fahrenheit(temperatures))
