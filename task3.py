@@ -19,7 +19,7 @@ sentences = ['капитан джек воробей',
              'ваша лодка готова, капитан',
              ]
 
-count_of_captains = sum(_.count('капитан') for _ in sentences)
+count_of_captains = sum(sentence.count('капитан') for sentence in sentences)
 
 print(count_of_captains)
 

@@ -15,7 +15,7 @@ def get_word_lengths(words):
     :return:
         list: the list of word lengths
     """
-    lengths = [len(_) for _ in words]
+    lengths = [len(word) for word in words]
     return lengths
 
 
